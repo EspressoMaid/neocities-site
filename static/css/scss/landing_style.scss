@@ -1,0 +1,49 @@
+@import "utils";
+@import "variables";
+
+html{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'JetBrains Mono', monospace;
+     color: $pink-landing;
+     overflow: hidden;
+ };
+
+ body{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: $torquise-landing;
+     height: 100vh;
+     :link{
+        text-decoration: none;
+    }
+    :visited{
+        color: $pink-landing;
+    }
+    h2{
+        font-size: 3rem;
+    }
+ }
+
+ .main{
+    background-image: url("../../media/img/c5bf7f28ed4046aef053d2b90d6a7bb2.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+     width: 75vw;
+     height: 75vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border: 3px solid $pink-landing;
+     border-radius: 5px;
+     cursor: pointer;
+     h1{
+         background-color: whitesmoke;
+         border: 1px solid $pink-landing;
+         padding: 0.5rem;
+     }
+ }
