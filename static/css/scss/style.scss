@@ -6,8 +6,9 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'JetBrains Mono', monospace;
-    overflow: auto;
-};
+    overflow: hidden;
+}
+
 
 body {
     display: flex;
@@ -24,3 +25,4 @@ body {
   header, footer, article, nav {
     padding: 1em;
   }
+
