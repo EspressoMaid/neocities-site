@@ -1,42 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 @import "variables";
 
-
 .col-2 {
-    display: flex;
-    flex-direction: column;
-    flex: 5;
-  }
-  .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: $torquise-landing;
-    height: 90vh;
-  }
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $torquise-landing;
+  height: 90vh;
+}
 
-.menu{
-  padding: 0;
-  ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    li{
-      color:ivory;
-      font-size: 17px;
-      padding-right: 1em;
-      padding-left: 1em;
-      border: 1px solid hotpink;
-    }
+h1.logo a {
+  color: #d8d8d8;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 22px;
+  float: left;
+  letter-spacing: 0.2em;
+}
+/* Header*/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/*navigation*/
+@media screen and (max-width: 1024px) {
+  .hidden {
+    display: none;
   }
 }
 
-.footer{
+.menu-btn {
+  display: none;
+}
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+  :link {
+    text-decoration: none;
+  }
+  :visited {
+    color: hotpink;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  overflow: auto;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  margin: 0;
+}
+
+header,
+footer {
+  background: $pink-landing;
+}
+header,
+footer,
+article {
+  padding: 1em;
 }
