@@ -1,28 +1,2 @@
 @import "utils";
 @import "variables";
-
-
-*{  
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'JetBrains Mono', monospace;
-    overflow: auto;
-}
-
-
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: row;
-    margin: 0;
-  }
- 
-
-  header, footer {
-    background: $pink-landing;
-  }
-  header, footer, article {
-    padding: 1em;
-  }
-

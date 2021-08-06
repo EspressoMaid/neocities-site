@@ -30,7 +30,7 @@ function navMenu() {
   // add on click listener to menu button
   menuBtnEl.addEventListener("click", () => {
     // if menu is shown -> hide, else -> show
-    navMenu.classList.toggle("hidden");
+    navMenu.classList.toggle("menu-toggle");
   });
 }
 
