@@ -84,7 +84,7 @@ h1.logo a {
   color: #d8d8d8;
   font-size: 1.6rem;
   border-bottom: 1px solid #d8d8d8;
-  display: block;
+  padding-left: 10px;
 }
 
 .menu li a {
@@ -99,6 +99,20 @@ h1.logo a {
 
 .menu-toggle {
   display: block;
+}
+
+/* Content */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70vw;
+  background-color: whitesmoke;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 /* Footer */
@@ -162,7 +176,7 @@ article {
 }
 
 /* normal screens */
-@media screen and (min-height: 1024px) {
+@media screen and (min-width: 1024px) {
   h1.logo a {
     color: #d8d8d8;
     text-decoration: none;
@@ -211,9 +225,9 @@ article {
     color: #d8d8d8;
     font-size: 4rem;
     border-bottom: 5px solid #d8d8d8;
-    display: block;
   }
   .menu li a {
+    padding: 5px;
     width: 100%;
     text-decoration: none;
     display: block;
@@ -249,6 +263,7 @@ article {
   }
   /* Footer */
   .footer {
+    color: #d8d8d8;
     font-size: 2.5rem;
     overflow: hidden;
     display: -webkit-box;
@@ -265,10 +280,11 @@ article {
             justify-content: space-evenly;
   }
   .footer :link {
+    color: #d8d8d8;
     text-decoration: none;
   }
   .footer :visited {
-    color: hotpink;
+    color: #d8d8d8;
   }
 }
 

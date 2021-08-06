@@ -17,7 +17,7 @@
 }
 
 h1.logo a {
-  color: #d8d8d8;
+  color: $menu-color;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
@@ -37,10 +37,10 @@ h1.logo a {
 
 .menu-btn {
   display: block;
-  color: #d8d8d8;
+  color: $menu-color;
   font-size: 1em;
   background-color: transparent;
-  border: 0.2em solid #d8d8d8;
+  border: 0.2em solid $menu-color;
   padding: 0.3em;
 }
 
@@ -50,15 +50,15 @@ h1.logo a {
   ul {
     :hover {
       color: $pink-landing;
-      background-color: #d8d8d8;
+      background-color: $menu-color;
     }
   }
   li {
     list-style: none;
-    color: #d8d8d8;
+    color: $menu-color;
     font-size: 1.6rem;
-    border-bottom: 1px solid #d8d8d8;
-    display: block;
+    border-bottom: 1px solid $menu-color;
+    padding-left: 10px;
     a {
       width: 100%;
       text-decoration: none;
@@ -66,27 +66,46 @@ h1.logo a {
     }
   }
   :visited {
-    color: #d8d8d8;
+    color: $menu-color;
   }
 }
 
 .menu-toggle {
   display: block;
 }
+
+/* Content */
+.container {
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+  background-color: whitesmoke;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  .post-title {
+  }
+  .post-body {
+  }
+  .post-author-date {
+  }
+  .post-img {
+  }
+}
+
 /* Footer */
 .footer {
-  color: #d8d8d8;
+  color: $menu-color;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   :link {
-    color: #d8d8d8;
+    color: $menu-color;
     text-decoration: none;
   }
   :visited {
-    color: #d8d8d8;
+    color: $menu-color;
   }
 }
 
@@ -119,9 +138,9 @@ article {
 
 /* normal screens */
 
-@media screen and (min-height: 1024px) {
+@media screen and (min-width: 1024px) {
   h1.logo a {
-    color: #d8d8d8;
+    color: $menu-color;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -141,10 +160,10 @@ article {
 
   .menu-btn {
     display: block;
-    color: #d8d8d8;
+    color: $menu-color;
     font-size: 3rem;
     background-color: transparent;
-    border: 0.3em solid #d8d8d8;
+    border: 0.3em solid $menu-color;
     padding: 0.3em;
   }
 
@@ -154,23 +173,23 @@ article {
     ul {
       :hover {
         color: $pink-landing;
-        background-color: #d8d8d8;
+        background-color: $menu-color;
       }
     }
     li {
       list-style: none;
-      color: #d8d8d8;
+      color: $menu-color;
       font-size: 4rem;
-      border-bottom: 5px solid #d8d8d8;
-      display: block;
+      border-bottom: 5px solid $menu-color;
       a {
+        padding: 5px;
         width: 100%;
         text-decoration: none;
         display: block;
       }
     }
     :visited {
-      color: #d8d8d8;
+      color: $menu-color;
     }
   }
 
@@ -195,6 +214,7 @@ article {
 
   /* Footer */
   .footer {
+    color: $menu-color;
     font-size: 2.5rem;
     overflow: hidden;
     display: flex;
@@ -202,10 +222,11 @@ article {
     flex-direction: row;
     justify-content: space-evenly;
     :link {
+      color: $menu-color;
       text-decoration: none;
     }
     :visited {
-      color: hotpink;
+      color: $menu-color;
     }
   }
 }
