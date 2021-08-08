@@ -77,16 +77,23 @@ h1.logo a {
 /* Content */
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 70vw;
   background-color: whitesmoke;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  .post-div {
+    border-top: 5px solid black;
+  }
   .post-title {
+    color: black;
   }
   .post-body {
   }
   .post-author-date {
+    font-size: 0.6em;
+    color: grayscale($color: #575757);
   }
   .post-img {
   }
